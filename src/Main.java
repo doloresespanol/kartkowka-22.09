@@ -27,5 +27,17 @@ public class Main {
                 System.out.print(element+" ");
             }
         }
+        List<Integer>  ciag =new ArrayList<>();
+        ciag.add(1);
+        for(int i =0 ;i <wylosowane.size()-1;i++){
+            if(wylosowane.get(i)<=wylosowane.get(i+1)){
+                ciag.add(ciag.get(ciag.size()-1)+1);
+            }
+            else{
+                ciag.add(1);
+            }
+        }
+        System.out.println(wylosowane);
+        System.out.println(ciag);
     }
 }
